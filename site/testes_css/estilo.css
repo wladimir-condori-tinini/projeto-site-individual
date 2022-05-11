@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+.header{
+    height: 100px;
+    width: 100%;
+}
+.banner{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+}
+.footer{
+    height: 100px;
+    width: 100%;
+}
+.wlad{
+    -webkit-text-stroke: 1px blue ;
+    /* text-shadow: 0 0 100px lime 0 0 30px red; */
+    transform: rotate(-25deg);
+    display: inline-block;
+    animation: text .2s ease-in-out infinite;
+}
