@@ -1,3 +1,4 @@
+/* Tela de Cadastro e Login */
 body {
     background-color: black;
     /* background-image: url(paisagem.webp); */
@@ -75,4 +76,31 @@ body {
     border-radius: 20px;
     border: 2px solid blue;
     margin-top: 60px;
+}
+/* Tela Home */
+.banner_1{
+    width: 100%;
+    height: 500px;
+    background-color: lightblue;
+    border: 4px solid lightyellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cubo{
+}
+#img_home{
+    border-radius: 20px;
+    border: 4px solid lightyellow;
+    background-size: cover;
+}
+.texto_home{
+    color: lightyellow;
+    font-family: monospace;
+    font-size: 26px;
+    font-weight: bolder;
+}
+.banner_2{
+    width: 100%;
+    height: 500px;
 }
