@@ -20,7 +20,7 @@ body{
 }
 .wlad{
     -webkit-text-stroke: 1px blue ;
-    /* text-shadow: 0 0 100px lime 0 0 30px red; */
+    text-shadow: 0 0 100px lime 0 0 30px red;
     transform: rotate(-25deg);
     display: inline-block;
     animation: text .2s ease-in-out infinite;
