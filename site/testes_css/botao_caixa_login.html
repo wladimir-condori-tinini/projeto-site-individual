@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter popup Box</title>
+    <link rel="stylesheet" href="Caixa_login.css">
+</head>
+
+<body>
+    <a class="btn" onclick="popupToggle();">Subscribe Us</a>
+    <div id="popup">
+        <div class="content">
+            <img src="https://cdn-icons-png.flaticon.com/512/3879/3879857.png" alt="">
+            <h2>Join our Newsletter</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Et possimus nihil, quia ratione ipsam ducimus soluta doloribus quasi cum similique animi expedita quod officiis odit dignissimos nam eos delectus itaque. </p>
+            <div class="inputBox">
+                <input type="email" placeholder="Enter Email">
+            </div>
+            <div class="inputBox">
+                <input type="submit"value="Sign up" class="btn">
+            </div>
+        </div>
+        <a class="close" onclick="popupToggle();"><img src="https://cdn-icons-png.flaticon.com/512/864/864393.png"alt=""></a>
+    </div>
+</body>
+</html>
+    <script>
+        function popupToggle() {
+            const popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
+    </script>
