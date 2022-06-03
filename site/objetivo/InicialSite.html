@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="siteoficial.css">
+</head>
+<body>
+    <div class="textobanner">
+        <p>O intuito do site é aproximar pessoas com gostos parecidos &hearts;</p>
+    </div>
+    <div class="container">
+        <a class="btn" onclick="popupToggle();"><span>Entrar</span></a>
+        <div id="popup">
+            <div class="content">
+                <h2>Login</h2>
+                <div class="inputBox">
+                    <input type="email" placeholder="Seu Email">
+                </div>
+                <div class="inputBox">
+                    <input type="password" placeholder="Sua Senha">
+                </div>
+                <div class="inputBox">
+                    <input type="submit"value="Entrar" class="btnC">
+                </div>
+                <p>esqueceu a senha? click aqui!</p>
+            </div>
+            <a class="close" onclick="popupToggle();"><img src="https://cdn-icons-png.flaticon.com/512/864/864393.png"alt=""></a>
+        </div>
+        <a href="Cadastrar-se.html" class="btn"><span>Cadastrar-se</span></a>
+    </div>
+</body>
+</html>
+<script>
+    function popupToggle() {
+        const popup = document.getElementById('popup');
+        popup.classList.toggle('active')
+    }
+</script>

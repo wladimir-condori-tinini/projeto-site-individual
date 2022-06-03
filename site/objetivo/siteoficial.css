@@ -1,0 +1,297 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    min-height: 100vh;
+    background-image: url(https://i.pinimg.com/originals/c7/70/75/c7707556553333014a8ac981c31776b4.gif);
+}
+/* inicial-page */
+.textobanner{
+    font-size: 30px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .btn{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #3db0f7 ;
+    margin: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.container .btn:hover{
+    transition-delay: 1.5s;
+    color: #000;
+    box-shadow: 0 0 10px #3db0f7 ,
+    0 0 20px #3db0f7 ,
+    0 0 40px #3db0f7 ,
+    0 0 80px #3db0f7 ,
+    0 0 160px #3db0f7 ;
+    cursor: pointer;
+
+}
+.container .btn span{
+    position: relative;
+    z-index: 100;
+}
+.container .btn:nth-child(2){
+    filter: hue-rotate(80deg);
+}
+.container .btn::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top:50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #3db0f7 ;
+    box-shadow: 5px -8px 0 #3db0f7 , 5px 8px 0 #3db0f7 ;
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+.container .btn:hover::before{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 #3db0f7 , 5px 0 0 #3db0f7 ;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+.container .btn::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top:50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #3db0f7 ;
+    box-shadow: -5px -8px 0 #3db0f7 , -5px 8px 0 #3db0f7 ;
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+.container .btn:hover::after{
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 #3db0f7 , -5px 0 0 #3db0f7 ;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+/* animação entrar */
+.btnC:hover{
+    letter-spacing: 1px;
+}
+#popup{ 
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    background: #fff;
+    width: 400px;
+    padding: 80px 50px 50px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transition: 0.5s;
+    visibility: hidden;
+    border-radius: 20px;
+    border: 3px solid #03a9f4;
+}
+#popup.active{
+    visibility: visible;
+    top: 50%;
+}
+#popup .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#popup img{
+    max-width: 30px;
+}
+#popup .content h2{
+    font-size: 32px;
+    font-weight: 500;
+    color: #333;
+    margin: 20px 0 10px;
+}
+#popup .content p{
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+#popup .content .inputBox{
+    position: relative;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#popup .content .inputBox input{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 15px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
+#popup .content .inputBox input[type="submit"]{
+    max-width: 150px;
+    background: #03a9f4;
+    color: #fff;
+    border: none;
+}
+.close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+/* pag - cadastrar */
+.header{
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid #03a9f4;
+    display: flex;
+    align-items: center;
+    color: #03a9f4;
+}
+.header .container{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#Voltar_inicio{
+    text-decoration: none;
+    color: white;
+}
+.header .container .navbar{
+    width: 20%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bannerCadastro{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bannerCadastro .cardCadastro{
+    width: 40%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid #03a9f4;
+    color: black;
+    border-radius: 40px;
+    opacity:90%;
+}
+.colunasI{
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    height: 260px;
+    display: flex;
+}
+.bannerCadastro .cardCadastro input{
+    border-radius: 10px;
+    border: 2px solid #03a9f4;
+    text-align: center;
+    margin: 10px;
+    height: 30px;
+}
+.bannerCadastro .cardCadastro .colunasI .colunaumI{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.bannerCadastro .cardCadastro .colunasI .colunadoisI{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btnPcadastro{
+    background-color: #03a9f4;
+    width: 40%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+.btnPcadastro:hover{
+    letter-spacing: 1px;
+}
+/* pagina home */
+.body_home{
+    width: 100%;
+    min-height: 700px;
+    padding: 0;
+    margin: 0;
+}
+.header_home{
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #03a9f4;
+    color: black    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.navbar_home{
+    width: 60%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img_menu{
+    width: 10%;
+    height: 60px;
+    background-image: url(fotos/menu.png);
+    background-size: cover;
+}
