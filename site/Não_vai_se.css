@@ -1,0 +1,124 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: #000;
+    color: white;
+    background-image: url(fotos/praia.jpg);
+    background-size: cover;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    opacity: 70%;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+}
+.header .container .nav_bar{
+    display: flex;
+}
+.banner{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+}
+.banner .card_texto p{
+    font-size: 36px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container #btnbanner{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #0f0;
+    margin: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.container #btnbanner:hover{
+    transition-delay: 1.5s;
+    color: #000;
+    box-shadow: 0 0 10px #0f0,
+    0 0 20px #0f0,
+    0 0 40px #0f0,
+    0 0 80px #0f0,
+    0 0 160px #0f0;
+}
+.container #btnbanner span{
+    position: relative;
+    z-index: 100;
+}
+.container #btnbanner:nth-child(2){
+    filter: hue-rotate(80deg);
+}
+.container #btnbanner::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top:50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #0f0;
+    box-shadow: 5px -8px 0 #0f0, 5px 8px 0 #0f0;
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+.container #btnbanner:hover::before{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 #0f0, 5px 0 0 #0f0;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+.container #btnbanner::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top:50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #0f0;
+    box-shadow: -5px -8px 0 #0f0, -5px 8px 0 #0f0;
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+.container #btnbanner:hover::after{
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 #0f0, -5px 0 0 #0f0;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
