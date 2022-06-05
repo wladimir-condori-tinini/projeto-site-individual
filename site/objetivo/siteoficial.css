@@ -405,7 +405,7 @@ body {
 .menu__box {
     display: block;
     position: absolute;
-    top: 0px;
+    top: 20px;
     left: -100%;
     width: 300px;
     height: 100%;
@@ -430,4 +430,64 @@ body {
 
 .menu__item:hover {
     background-color: #654597;
+}
+/*sub comunidade*/
+.dp-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dp-menu ul {
+    background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+    left: 15px;
+}
+
+.dp-menu ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.30s;
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+.dp-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+.dp-menu ul ul {
+    width: 150px
+}
+
+.dp-menu ul ul li a {
+    display: block;
+}
+/* Pagina perfil */
+.bannerpgp {
+    width: 100%;
+    min-height: 799px;
+    display: flex;
+    justify-content: center;
+}
+
+.card_tela_pgperfil {
+    width: 80%;
+    min-height: 700px;
+    border-left: 5px solid #654597;
+    border-right: 5px solid #654597;
+    background-color: white;
+    padding: 20px;
 }
