@@ -537,7 +537,7 @@ body {
 } 
 .descricao_usuario_perfil{
     width: 70%;
-    min-height: 300px;
+    min-height: 100px;
     border: 2px solid #654597;
     padding: 30px;
     border-radius: 20px;
@@ -565,6 +565,26 @@ body {
     background-color: #654597;
     color: white;
 }
+.div_txt_user{
+    width: 50%;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 30px;
+    color: #654597;
+    border-bottom: 2px solid #654597;
+}
+.postes_user{
+    margin: 20px;
+    width: 80%;
+    min-height: 200px;
+    border: 2px solid #654597;
+    border-radius: 20px;
+    padding: 20px;
+}
 /* pag config */
 .bannerpgconf {
     width: 100%;
@@ -584,4 +604,32 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.assunto_post{
+    width: 50%;
+    height: 50px;
+    border: 2px solid #654597;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 20px; 
+}
+.post_descricao_user{
+    width: 50%;
+    min-height: 200px;
+    border: 2px solid #654597;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+    margin: 10px;
+}
+#btn_simples{
+    margin: 10px;
+    width: 20%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #654597;
+    color: white;
+    cursor: pointer;
 }
