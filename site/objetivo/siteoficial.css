@@ -346,8 +346,23 @@ body {
     border-right: 5px solid #654597;
     background-color: white;
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
-
+.div_bem_vindo{
+    width: 70%;
+    height: 70px;
+    border: 5px solid #654597;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.div_bem_vindo span{
+    margin: 5px;
+}
 /* botao menu */
 #menu__toggle {
     opacity: 0;
@@ -547,8 +562,10 @@ body {
     width: 70%;
     min-height: 50px;
     border-radius: 20px;
-    border: 2px solid #654597;   
+    border: 2px solid #333;   
     text-align: center;
+    background-color: #654597;
+    color: white;
 }
 .botoes_desc{
     width: 70%;
@@ -564,6 +581,7 @@ body {
     border: none;
     background-color: #654597;
     color: white;
+    cursor: pointer;
 }
 .div_txt_user{
     width: 50%;
@@ -584,26 +602,6 @@ body {
     border: 2px solid #654597;
     border-radius: 20px;
     padding: 20px;
-}
-/* pag config */
-.bannerpgconf {
-    width: 100%;
-    min-height: 799px;
-    display: flex;
-    justify-content: center;
-}
-
-.card_tela_pgconf {
-    width: 80%;
-    min-height: 700px;
-    border-left: 5px solid #654597;
-    border-right: 5px solid #654597;
-    background-color: white;
-    padding: 20px;
-    color: black;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 .assunto_post{
     width: 50%;
@@ -633,3 +631,46 @@ body {
     color: white;
     cursor: pointer;
 }
+/* pag config */
+.bannerpgconf {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.card_tela_pgconf {
+    width: 80%;
+    min-height: 100px;
+    border-left: 5px solid #654597;
+    border-right: 5px solid #654597;
+    background-color: #333;
+    padding: 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.alterar{
+    font-size: 40px;
+    color: #654597;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+    margin: 20px;
+}
+.select_conf{
+    width: 30%;
+    height: 40px;
+    color: white;
+    background-color: #654597;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+/* Home */
